@@ -75,7 +75,7 @@ async def cog(ctx,identify=None,name=None):
 
         #A little help for using this command
         if identify == None:
-            await ctx.send('`new: This command followed by "-cog " creates a new cog with a template`\n`delete: This command followed by "-cog " delete an existing cog`')
+            await ctx.send('`new: This command followed by "-cog " creates a new cog with a template`\n`delete: This command followed by "-cog " delete an existing cog`\n`reload: This command followed by "-cog " reload your cog, use when you update the code of him`\n`load: This command followed by "-cog " load an existing cog`\n`unload: This command followed by "-cog " unload an existing cog`')
 
     else:
         await ctx.send('Do you not have permission to run this command')
