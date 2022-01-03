@@ -11,7 +11,7 @@ async def on_ready():
 
 @client.command()
 async def cog(ctx,identify=None,name=None):
-    if ctx.message.author.id == allowed_peoples:
+    if ctx.message.author.id in allowed_peoples:
 
         #This will create a new cog so your code doesn't get messed up
         if identify == 'new':
@@ -86,4 +86,4 @@ for filename in os.listdir('./cogs'): #cogs will be used to make the code more c
         client.load_extension(f'cogs.{filename[:-3]}')
 
 #This will make the bot run(make sure you put your bot's token into bot_config)
-client.run(betoken)
+client.run(bot_token)
